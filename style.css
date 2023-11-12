@@ -36,7 +36,7 @@
             margin: 50px;
             padding: 10px;
             text-align: center;
-            width: 800px;
+            width: 1300px;
         }
 
         .text {
@@ -78,17 +78,4 @@
         div.outputText {
             max-height: 70px;
             overflow-y: auto;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px; /* Adjust the margin as needed */
-        }
-
-        .image {
-            width: 100%; /* Adjust the width as needed */
-            border-radius: 15px;
-            overflow: hidden;
-            margin: 10px;
         }
