@@ -12,14 +12,11 @@
 </head>
 <body>
     <div class="razor">
-    <h1 style="font-family: 'Arial', sans-serif;">DISCORD AUTOMOD BYPASSER</h1>
-    <video autoplay loop muted playsinline id="backgroundVideo">
-        <source src="" type="video/mp4">
-    </video>
-    <textarea id="inputBox" onkeyup="showText()"></textarea>
-    <div class="box">
-        <div id="outputText"></div>
-        <button type="button" onclick="copyToClipboard(); alert('!!!The text has been copied!!!\n \nThank you for using my bypasser');">copy</button>
-    </div>   
-</div>
+        <h1 style="font-family: 'Arial', sans-serif;">DISCORD AUTOMOD BYPASSER</h1>
+        <textarea id="inputBox" onkeyup="showText()"></textarea>
+        
+        <div id="outputText" class="text" style="position: relative;"></div>
+        <button onclick="copyToClipboard()" style="position: relative;">Copy</button>
+    </div>
+</body>
 </html>
