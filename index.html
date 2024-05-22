@@ -9,14 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-    <div class="razor">
-        <h1 style="font-family: 'Arial', sans-serif;">DISCORD AUTOMOD BYPASSER</h1>
-        <textarea id="inputBox" onkeyup="showText()"></textarea>
-        
-        <div id="outputText" class="text" style="position: relative;"></div>
-        <button onclick="copyToClipboard()" style="position: relative;">Copy</button>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="razor text-center">
+            <h1 class="font-weight-bold">DISCORD AUTOMOD BYPASSER</h1>
+            <textarea id="inputBox" class="form-control my-3" onkeyup="showText()"></textarea>
+            <div id="outputText" class="text my-3"></div>
+            <button onclick="copyToClipboard()" class="btn btn-primary">Copy</button>
+        </div>
     </div>
 </body>
 </html>
