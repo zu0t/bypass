@@ -8,7 +8,10 @@ body, html {
     color: #ffffff;
     background-color: #000000;
     border-radius: 15px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     width: 100%;
     max-width: 500px;
     box-shadow: 0 0 10px #0004ff;
@@ -25,9 +28,8 @@ textarea {
 }
 
 button {
-    background-color: #ffffff;
-    border-radius: 5px;
     box-shadow: 0 0 20px #0004ff;
+    text-align: center;
 }
 
 
@@ -39,4 +41,32 @@ button {
     textarea, button {
         width: 100%;
     }
+}
+
+#but {
+    text-align: center;
+    width: 75px;
+    height: 35px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    background: #0004ff;
+    transition: 0.1s;
+}
+
+#but::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#but:active {
+    transform: scale(0.9) rotate(3deg);
+    transition: 0.1s;
+}
+#a {
+    font-size: 25px;
 }
