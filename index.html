@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:title" content="The Discord Automod Bypass" />
     <meta property="og:description" content="The best working automod bypass" />
     <meta property="og:image" content="./img/Screenshot 2024-02-24 131859.png" />
     <link rel="icon" type="image/png" href="./img/Screenshot 2024-02-24 131859.png" sizes="32x32">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+
+    <title>Discord Automod Bypasser V3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="razor text-center">
-            <h1 class="font-weight-bold">
-                DISCORD AUTOMOD BYPASSER <span class="version">V2</span>
-            </h1>            
-            <textarea id="inputBox" class="form-control my-3" onkeyup="showText()"></textarea>
-            <select id="bypassSelect" class="form-control my-2" onchange="showText()">
+    <main class="content-wrapper">
+        <div class="bypasser-container">
+            <h1>
+                DISCORD AUTOMOD BYPASSER
+            </h1>
+            
+            <textarea id="inputBox" class="io-box" placeholder="Type or paste your text here..."></textarea>
+            
+            <select id="bypassSelect" class="select-box">
                 <option value="invisible">Universal (basic)</option>
+                <option value="combo">Undetectable</option>
                 <option value="unicode">Unicode Leetspeak</option>
                 <option value="cyrillic">Cyrillic Letters</option>
                 <option value="emoji">Emoji Separator</option>
                 <option value="dot">Dot Separator</option>
+                <option value="strikethrough">Combining Characters</option>
                 <option value="rot13">ROT13 Obfuscation</option>
                 <option value="reverse">Reverse Text</option>
-                <option value="strikethrough">Combining Characters</option>
                 <option value="base64">Base64 Encode</option>
-                <option value="combo">Undetectable</option>
             </select>
-            <div id="outputText" class="text my-3"></div>
-<br>            <button id="but" onclick="copyToClipboard()" class="btn btn-primary">Copy</button><br>
-<br>        </div>
-    </div>
+            
+            <div id="outputText"></div>
+            
+            <button id="copyButton" class="btn">
+                <span>Copy Result</span>
+            </button>
+            
+            </div>
+    </main>
+
+    <footer class="site-footer">
+        Copyright &copy; <span id="current-year"></span> <a href="https://zuot.cc" target="_blank" rel="noopener noreferrer">zuot</a>. All Rights Reserved.
+    </footer>
+
 </body>
 </html>
